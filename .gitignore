@@ -1,17 +1,13 @@
-# Dependencias
 node_modules/
 
-# Build de producción
 dist/
 dist-ssr/
 
-# Variables de entorno (pueden contener claves)
 .env
 .env.*
 !.env.example
 *.local
 
-# Logs
 logs/
 *.log
 npm-debug.log*
@@ -20,17 +16,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Caché de herramientas
 .vite/
 .cache/
 .eslintcache
 coverage/
 
-# Carpetas que generan Netlify / Vercel al deployar desde la CLI
 .netlify/
 .vercel/
 
-# Editores
 .vscode/*
 !.vscode/extensions.json
 .idea/
@@ -40,7 +33,6 @@ coverage/
 *.sln
 *.sw?
 
-# Sistema operativo
 .DS_Store
 Thumbs.db
 desktop.ini

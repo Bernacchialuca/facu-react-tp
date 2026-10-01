@@ -1,5 +1,3 @@
-// Datos de ejemplo de la empresa que se muestran en el Footer.
-
 export const empresa = {
   nombre: 'TecnoNova',
   razonSocial: 'TecnoNova S.R.L.',

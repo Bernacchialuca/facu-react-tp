@@ -4,7 +4,6 @@ import './NavBar.css'
 function NavBar() {
   const { pathname } = useLocation()
 
-  // Marca como activo el link de la sección en la que estamos.
   const claseLink = (activo) => (activo ? 'navbar__link navbar__link--activo' : 'navbar__link')
 
   return (

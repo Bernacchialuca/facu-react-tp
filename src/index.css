@@ -59,8 +59,6 @@ ul {
   list-style: none;
 }
 
-/* Utilidades compartidas */
-
 .contenedor {
   width: 100%;
   max-width: var(--ancho-max);
