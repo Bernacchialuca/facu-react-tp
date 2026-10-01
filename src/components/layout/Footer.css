@@ -1,0 +1,125 @@
+.footer {
+  padding: 56px 0 24px;
+  background-color: var(--color-footer);
+  color: var(--color-footer-texto);
+  font-size: 0.9rem;
+}
+
+.footer__columnas {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
+  gap: 32px;
+}
+
+.footer__marca {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.footer__marca strong {
+  color: #a5b4fc;
+}
+
+.footer__titulo {
+  margin-bottom: 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__lista {
+  display: grid;
+  gap: 8px;
+}
+
+.footer__lista a:hover,
+.footer__legal-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer__ciudad {
+  display: block;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer__newsletter {
+  display: grid;
+  gap: 10px;
+}
+
+.footer__newsletter-campos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer__newsletter input {
+  flex: 1 1 160px;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 10px;
+  background-color: rgb(255 255 255 / 6%);
+  color: #fff;
+  font: inherit;
+}
+
+.footer__newsletter input::placeholder {
+  color: rgb(255 255 255 / 45%);
+}
+
+.footer__gracias {
+  color: #a7f3d0;
+}
+
+.footer__equipo {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+.footer__tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+  font-size: 0.8rem;
+}
+
+.footer__legal p {
+  max-width: 640px;
+}
+
+.footer__legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+@media (max-width: 960px) {
+  .footer__columnas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__columnas {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,118 @@
+.home {
+  display: grid;
+  gap: 40px;
+}
+
+.home__hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 32px;
+  padding: 48px;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 85% 20%, rgb(124 58 237 / 18%), transparent 45%),
+    linear-gradient(135deg, #eef0ff, #ffffff);
+  border: 1px solid var(--color-borde);
+}
+
+.home__hero-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.home__titulo {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.home__titulo span {
+  color: var(--color-primario);
+}
+
+.home__bajada {
+  max-width: 480px;
+  font-size: 1.05rem;
+  color: var(--color-texto-suave);
+}
+
+.home__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.home__hero-imagen img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.home__beneficios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.home__beneficio {
+  padding: 20px;
+  border: 1px solid var(--color-borde);
+  border-left: 4px solid var(--color-primario);
+  border-radius: var(--radio);
+  background-color: var(--color-superficie);
+}
+
+.home__beneficio h3 {
+  font-size: 1rem;
+}
+
+.home__beneficio p {
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+}
+
+.home__destacados-encabezado {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.home__destacados-encabezado h2 {
+  font-size: 1.6rem;
+}
+
+.home__ver-todos {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--color-primario);
+}
+
+.home__ver-todos:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .home__hero {
+    grid-template-columns: 1fr;
+    padding: 28px 20px;
+  }
+
+  .home__hero-imagen {
+    order: -1;
+  }
+
+  .home__hero-imagen img {
+    max-height: 200px;
+  }
+
+  .home__beneficios {
+    grid-template-columns: 1fr;
+  }
+}

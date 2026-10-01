@@ -1,0 +1,40 @@
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid rgb(255 255 255 / 8%);
+  border-radius: var(--radio);
+  background-color: rgb(255 255 255 / 4%);
+}
+
+.team-card__avatar {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primario), #7c3aed);
+  color: #fff;
+  font-weight: 700;
+}
+
+.team-card__nombre {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.team-card__rol {
+  font-size: 0.85rem;
+}
+
+.team-card__email {
+  font-size: 0.8rem;
+  color: #a5b4fc;
+  word-break: break-all;
+}
+
+.team-card__email:hover {
+  text-decoration: underline;
+}
